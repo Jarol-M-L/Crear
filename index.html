@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CREAR Y  INICIAR</title>
+</head>
+<body>
+  <!-- Registro -->
+  <form id="registroForm">
+    <h2>Crear Cuenta</h2>
+    <label>Nombre completo</label><br/>
+    <input type="text" id="nombre" required><br/>
+    <span id="errorNombre"></span><br/>
+
+    <label>Correo electrónico</label><br/>
+    <input type="email" id="correo" required><br/>
+    <span id="errorCorreo"></span><br/>
+
+    <label>Número de móvil</label><br/>
+    <input type="tel" id="telefono" required><br/>
+    <span id="errorTelefono"></span><br/>
+
+    <label>Contraseña</label><br/>
+    <input type="password" id="contrasena" required>
+    <input type="checkbox" id="mostrarRegistroPass"> Mostrar<br/>
+    <span id="errorContrasena"></span><br/><br/>
+
+    <input type="submit" value="Registrar">
+  </form>
+  
+  <form id="loginForm" hidden>
+    <h2>Iniciar Sesión</h2>
+    <label>Correo electrónico</label><br/>
+    <input type="email" id="loginCorreo" required><br/>
+
+    <label>Contraseña</label><br/>
+    <input type="password" id="loginContrasena" required>
+    <input type="checkbox" id="mostrarPass"> Mostrar<br/><br/>
+
+    <input type="submit" value="Entrar"><br/>
+    <span id="loginError"></span><br/>
+    <a href="#" id="recuperarLink" hidden>Recuperar contraseña</a>
+  </form>
+
+  <form id="recuperarForm" hidden>
+    <h2>Recuperar Contraseña</h2>
+    <label>Nueva contraseña</label><br/>
+    <input type="password" id="nuevaContrasena" required><br/>
+    <span id="errorNuevaContrasena"></span><br/><br/>
+    <input type="submit" value="Actualizar contraseña">
+    <span id="recuperarMensaje"></span>
+  </form>
+
+  <script src="java/main.js">
+  </script>
+</body>
+</html>
